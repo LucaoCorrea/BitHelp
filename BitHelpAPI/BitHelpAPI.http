@@ -1,0 +1,6 @@
+@BitHelpAPI_HostAddress = http://localhost:5002
+
+GET {{BitHelpAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
