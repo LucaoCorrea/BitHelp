@@ -46,7 +46,8 @@ namespace BitHelpAPI.Controllers
 
             return Ok("User created");
         }
-        
+
+        [HttpPost("login")]
         public IActionResult Login(UserLoginDto dto)
         {
             var user = _context.Users.SingleOrDefault(u => u.Email == dto.Email);
